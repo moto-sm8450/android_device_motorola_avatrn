@@ -20,6 +20,7 @@ vendor.display.foss.config_path=/vendor/etc/display/FOSSConfig.xml
 persist.vendor.fingerprint.backend=hidl
 persist.vendor.fingerprint.type=udfps
 persist.vendor.fingerprint.sensor_location=540|2167|91
+persist.vendor.fingerprint.udfps.handler=moto
 ro.hardware.fingerprint=goodix
 
 # NFC
