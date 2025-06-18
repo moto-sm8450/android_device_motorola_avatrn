@@ -55,7 +55,7 @@ PRODUCT_COPY_FILES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.moto_sm7435_fod
+    android.hardware.biometrics.fingerprint-service.lineage
 
 # Init
 PRODUCT_PACKAGES += \

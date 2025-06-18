@@ -17,6 +17,9 @@ vendor.display.foss.config=1
 vendor.display.foss.config_path=/vendor/etc/display/FOSSConfig.xml
 
 # Fingerprint
+persist.vendor.fingerprint.backend=hidl
+persist.vendor.fingerprint.type=udfps
+persist.vendor.fingerprint.sensor_location=540|2167|91
 ro.hardware.fingerprint=goodix
 
 # NFC
