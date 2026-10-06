@@ -62,6 +62,8 @@ def blob_fixup_graphic_buffer_size(
 
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/etc/permissions/moto-settings.xml': blob_fixup()
+        .regex_replace('/system/', '/system_ext/'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup().replace_needed(
         'vendor.qti.hardware.display.config-V2-ndk_platform.so',
         'vendor.qti.hardware.display.config-V2-ndk.so',

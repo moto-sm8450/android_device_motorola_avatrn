@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     FrameworksResDevice \
     LineageSdkResDevice \
     LineageSystemUIResDevice \
+    MotoSettingsFaceUnlock \
     SettingsResDevice \
     SystemUIResDevice
 
@@ -47,6 +48,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/resourcemanager_parrot_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/resourcemanager_parrot_qrd.xml \
     $(LOCAL_PATH)/configs/audio/audio_ext_spkr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_ext_spkr.conf \
     $(LOCAL_PATH)/configs/audio/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml
+
+# Face unlock
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml
 
 # Fingerprint
 PRODUCT_PACKAGES += \

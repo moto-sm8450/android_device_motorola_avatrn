@@ -313,6 +313,17 @@ vendor/etc/display/qdcm_calib_data_mipi_mot_vid_csot_655_1080p_dsc_144hz.json
 vendor/etc/display/qdcm_calib_data_mipi_mot_vid_tm_655_1080p_dsc_144hz.json
 vendor/etc/display/qdcm_calib_data_mipi_mot_video_dummy_qhd.json
 
+# Face Unlock
+product/etc/default-permissions/default-permissions-faceunlock.xml
+product/etc/permissions/com.motorola.faceunlock.xml
+product/etc/permissions/privapp-permissions-com.motorola.faceunlock.xml
+product/etc/sysconfig/hiddenapi-whitelist-com.motorola.faceunlock.xml
+product/priv-app/MotoFaceUnlock/MotoFaceUnlock.apk
+system/etc/permissions/moto-settings.xml:system_ext/etc/permissions/moto-settings.xml
+system/framework/moto-core_services.jar:system_ext/framework/moto-core_services.jar
+system/framework/moto-settings.jar:system_ext/framework/moto-settings.jar
+system_ext/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
+
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodix.rc
